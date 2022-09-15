@@ -1,0 +1,23 @@
+import time
+
+contador = 0
+while contador <1:
+    valor1 =\
+        int(input("Digite aqui o primeiro valor."))
+    valor2 =\
+        int(input("Digite aqui o segundo valor."))
+    valor3 =\
+        int(input("Digite aqui o terceiro valor."))
+    if valor1 == valor2 or valor1 == valor3 or valor2 == valor3:
+        print("Algum dos valores é igual. Por favor digite números diferentes")
+        time.sleep(3)
+    elif valor1 != valor2 and valor1 != valor3 and valor2 != valor3:
+        if valor1 > valor2 and valor1 > valor3:
+            print("O " + str(valor1) + " é maior que " + str(valor2) + " e " + str(valor3))
+            contador += 1
+        elif valor2 > valor1 and valor2 > valor3:
+            print("O " + str(valor2) + " é maior que " + str(valor1) + " e " + str(valor3))
+            contador += 1
+        elif valor3 > valor1 and valor3 > valor2:
+            print("O " + str(valor3) + " é maior que " + str(valor2) + " e " + str(valor1))
+            contador += 1
