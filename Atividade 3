@@ -1,0 +1,18 @@
+import random
+import time
+
+letra = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+contador = 0
+escolha = random.choice(letra)
+tentativa = 5
+print("Foi sorteado uma letra do alfabeto. Tente acertar.")
+while contador < 5:
+    forca = input("Qual letra você chuta? ")
+    if forca == escolha:
+        print("Você acertou! A letra era " + escolha)
+    else:
+        tentativa -= 1
+        print("Você errou. Lhe resta " + str(tentativa) + " tentativas.")
+        time.sleep(2)
+    contador += 1
+print("A letra era " + escolha)
