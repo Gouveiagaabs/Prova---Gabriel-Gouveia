@@ -1,0 +1,12 @@
+idade  =\
+    int(input("Digite aqui a sua idade: "))
+tempo =\
+    int(input("Digite aqui o tempo de serviço: "))
+if idade >= 65:
+    print("Você já pode se aposentar por idade!")
+elif tempo >= 30:
+    print("Você já pode se aposentar por tempo de serviço!")
+elif idade >= 60 and tempo >= 25:
+    print("Você já pode se aposentar de alguma forma!")
+else:
+    print("Você nao pode se aposentar ainda.")
