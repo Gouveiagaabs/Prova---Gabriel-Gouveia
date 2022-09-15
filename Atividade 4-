@@ -1,0 +1,32 @@
+import time
+
+contador = 0
+saldo = 0.0
+while contador < 1:
+    escolha = int(input("Digite 1 para consulta de saldo, 2 para saque, 3 para depósito ou 4 para sair."))
+    if escolha == 1:
+        print("\n"*1)
+        if saldo >= 0:
+            print("O saldo atual é R$" + str(saldo))
+        else:
+            print("O saldo atual é R$" + str(saldo) + "D")
+        time.sleep(3)
+        print("\n"*2)
+    if escolha == 2:
+        print("\n" * 1)
+        saque = float(input("Digite um valor para saque: R$"))
+        print("\n" * 2)
+        print("Você sacou R$" + str(saque))
+        print("\n" * 1)
+        time.sleep(3)
+        saldo = saldo - saque
+    if escolha == 3:
+        print("\n" * 1)
+        deposito = float(input("Digite um valor para depositar: R$"))
+        print("\n" * 1)
+        print("Você depositou R$" + str(deposito))
+        print("\n" * 1)
+        time.sleep(3)
+        saldo = saldo + deposito
+    if escolha == 4:
+        contador += 1
